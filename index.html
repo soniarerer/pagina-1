@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pequeños detalles de ti ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- =========================================
+         FONDO GENERAL
+    ========================================== -->
+    <div class="background">
+        <div class="background-overlay"></div>
+    </div>
+
+    <!-- =========================================
+         MÚSICA (OPCIONAL)
+         Puedes agregar un archivo musica.mp3
+         si después quieres utilizarlo.
+    ========================================== -->
+    <audio id="music" loop preload="none">
+        <source src="musica.wav" type="audio/wav">
+    </audio>
+
+    <!-- =========================================
+         CONTENEDOR PRINCIPAL
+    ========================================== -->
+    <main class="app">
+
+        <!-- =====================================
+             PORTADA
+        ====================================== -->
+        <section class="screen active" id="inicio">
+
+            <div class="card intro-card">
+
+                <div class="photo-container">
+                    <img src="img/foto.jpg" onerror="this.onerror=null; this.src='img/foto.svg';" alt="Nuestra foto">
+                </div>
+
+                <p class="small-title">PARA MI AMORSITO</p>
+
+                <h1>
+                    Pequeños<br>
+                    detalles de ti
+                </h1>
+
+                <p class="intro-text">
+                    Por ser la persona que eres, dulce, especial, comprensiva y muy tiernaaaaaaaa .
+                </p>
+
+                <button class="main-button" onclick="nextSection()">
+                    Comenzar
+                    <span>→</span>
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             OJOS
+        ====================================== -->
+        <section class="screen" id="ojos">
+
+            <div class="card">
+
+                <div class="photo-small">
+                    <img src="img/foto.jpg" alt="Foto">
+                </div>
+
+                <span class="number">01</span>
+
+                <p class="category">UN DETALLE</p>
+
+                <h2>Tus ojos 👀</h2>
+
+                <p class="message">
+                    Me atrapan el calido color cafe de tus ojos.
+                </p>
+
+                <button class="next-button" onclick="nextSection()">
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CACHETES
+        ====================================== -->
+        <section class="screen" id="cachetes">
+
+            <div class="card">
+
+                <div class="photo-small">
+                    <img src="img/foto.jpg" alt="Foto">
+                </div>
+
+                <span class="number">02</span>
+
+                <p class="category">UN DETALLE</p>
+
+                <h2>Tus cachetes 😊</h2>
+
+                <p class="message">
+                    No sé qué tienen,
+                    pero siempre terminan llamando mi atención.
+                </p>
+
+                <button class="next-button" onclick="nextSection()">
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             CABELLO
+        ====================================== -->
+        <section class="screen" id="cabello">
+
+            <div class="card">
+
+                <div class="photo-small">
+                    <img src="img/foto.jpg" alt="Foto">
+                </div>
+
+                <span class="number">03</span>
+
+                <p class="category">UN DETALLE</p>
+
+                <h2>Tu cabello ✨</h2>
+
+                <p class="message">
+                    Me  gusta simplemente cómo se ve en ti.<3
+                </p>
+
+                <button class="next-button" onclick="nextSection()">
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             OREJAS
+        ====================================== -->
+        <section class="screen" id="orejas">
+
+            <div class="card">
+
+                <div class="photo-small">
+                    <img src="img/foto.jpg" alt="Foto">
+                </div>
+
+                <span class="number">04</span>
+
+                <p class="category">UN DETALLE</p>
+
+                <h2>Tus orejas 🤍</h2>
+
+                <p class="message">
+                 Son pequeñitos y muy sutiles , me dan ganas de morderlas.
+                </p>
+
+                <button class="next-button" onclick="nextSection()">
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             SONRISA
+        ====================================== -->
+        <section class="screen" id="sonrisa">
+
+            <div class="card">
+
+                <div class="photo-small">
+                    <img src="img/foto.jpg" alt="Foto">
+                </div>
+
+                <span class="number">05</span>
+
+                <p class="category">UN DETALLE</p>
+
+                <h2>Tu sonrisa coqueta</h2>
+
+                <p class="message">
+                    Tu bella sonrisa me deja muy hipnotizado,
+                    y es lo que alegra mi dia.
+                </p>
+
+                <button class="next-button" onclick="nextSection()">
+                    Siguiente →
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- =====================================
+             FINAL
+        ====================================== -->
+        <section class="screen" id="final">
+
+            <div class="card final-card">
+
+                <div class="final-heart">
+                    ♡
+                </div>
+
+                <p class="category">Y AL FINAL...</p>
+
+                <h2>Tú ❤️</h2>
+
+                <p class="message final-message">
+                    Quizá pienses que no eres especial , pero para mi importas mucho y te quiero con todo lo que eres mi bb
+                <div class="final-line"></div>
+
+                <p class="signature">
+                    Hecho por tu fan n°1.
+                </p>
+
+                <button class="restart-button" onclick="restartPage()">
+                    Volver a empezar ↻
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- =========================================
+         INDICADOR DE PROGRESO
+    ========================================== -->
+
+    <div class="progress-container">
+
+        <div class="progress-bar">
+            <div class="progress-fill" id="progressFill"></div>
+        </div>
+
+        <span id="progressText">1 / 7</span>
+
+    </div>
+
+
+    <!-- =========================================
+         BOTÓN DE MÚSICA
+    ========================================== -->
+
+    <button class="music-button" id="musicButton" onclick="toggleMusic()">
+        ♪
+    </button>
+
+
+    <!-- =========================================
+         JAVASCRIPT
+    ========================================== -->
+
+    <script src="script.js"></script>
+
+</body>
+</html>
